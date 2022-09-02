@@ -16,7 +16,7 @@
 
                     {{ __('You are logged in!') }}
                         <?php
-                        //test
+                        //testaaaaaaaaaaa
                         Route::group(['middleware' => 'role:web-developer'], function() {
                             Route::get('/dashboard', function() {
                                 return 'Добро пожаловать, Веб-разработчик';
