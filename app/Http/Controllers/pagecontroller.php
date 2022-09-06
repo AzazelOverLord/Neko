@@ -8,13 +8,13 @@ class pagecontroller extends Controller
 {
     public function index()
     {
-        if (session('status')==null)
-        {
-            return view('auth.login');
-        }
-        else
+        /*if (session('status'))
         {
             return view('home');
         }
+        else
+        {
+            return view('auth.login');
+        }*/
     }
 }

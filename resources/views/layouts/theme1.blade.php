@@ -23,6 +23,21 @@
 
 <body>
 
+{{
+                        Route::group(['middleware' => 'role:web-developer'], function()
+                        {
+                            Route::get('/asd', function() {
+                                return 'Добро пожаловать, Веб-разработчик';
+                            });
+                        })
+                        Route::group(['middleware' => 'role:guest'], function()
+                        {
+                            Route::get('/login', function() {
+                                return 'Добро пожаловать, Веб-разработчик'
+                            });
+                        })
+}}
+
 <!-- Top Bar Start -->
 <div class="topbar">
     <!-- Navbar -->
@@ -99,7 +114,7 @@
                     <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
                     <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                    <a class="dropdown-item" href="{{ route('logout') }}"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
                 </div>
             </li>
         </ul>
@@ -131,7 +146,7 @@
             <img src="{{  url('/')  }}/assets/images/users/user-1.jpg" alt="user" class="rounded-circle img-thumbnail mb-1">
             <span class="online-icon"><i class="mdi mdi-record text-success"></i></span>
             <div class="media-body align-item-center">
-                <h5>Mr. Michael Hill </h5>
+                <h5>{{ Auth::user()->name }}</h5>
                 <ul class="list-unstyled list-inline mb-0 mt-2">
                     <li class="list-inline-item">
                         <a href="javascript: void(0);" class=""><i class="mdi mdi-account"></i></a>

@@ -11,7 +11,7 @@
         </div>
 
         <form class="form-horizontal my-4" action="{{ route('login') }}" method="POST">
-
+            @csrf
             <div class="form-group">
                 <label for="username">{{ __('Логин') }}</label>
                 <div class="input-group mb-3">
@@ -41,6 +41,12 @@
 
             <div class="form-group row mt-4">
                 <div class="col-sm-6">
+                    <a href="{{ url('register') }}">Регистрация</a>
+                </div>
+            </div>
+
+            <div class="form-group row mt-4">
+                <div class="col-sm-6">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="remember" {{ old('remember') ? 'checked' : '' }}>
                         <label class="custom-control-label" for="remember">{{ __('Запомнить меня') }}</label>
@@ -52,7 +58,7 @@
 
 
                 @if (Route::has('password.request'))
-                    <a class="text-muted font-13" href="{{ route('password.request') }}">
+                    <a class="text-muted font-13" href="{{ url('reset') }}">
                         <i class="mdi mdi-lock"></i>{{ __('Забыли пароль?') }}</a>
                     </a>
                 @endif
