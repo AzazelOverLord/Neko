@@ -9,7 +9,9 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    {{ Breadcrumbs::render('form-add', 'kek') }}
+                                    {{
+                                        Breadcrumbs::render('form-add', $cat)
+                                    }}
                                     <h4 class="mt-0 header-title">Типы сайта по умолчанию</h4>
                                     <div class="row">
                                         <div class="col-12">

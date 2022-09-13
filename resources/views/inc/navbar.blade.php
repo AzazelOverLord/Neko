@@ -12,6 +12,99 @@
                 <a href="create_clients.php"><i class="mdi mdi-human-greeting"></i><span>Создать клиента</span></a>
             </li>
 
+
+            <li class="menu-title">Панель администратора</li>
+            <li>
+                <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Сотрудники</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level" id="1" aria-expanded="false">
+                    <li><a href="create_user.php">Создать пользователя</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Прочее</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level" id="2" aria-expanded="false">
+                    <li><a href="add_databse.php">Базы данных</a></li>
+                    <li><a href="show_viewers.php">Количество просмотров сайта</a></li>
+                </ul>
+            </li>
+            <li>
+            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Настройки сайта</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+            <ul class="nav-second-level" aria-expanded="false">
+                <li><a href="">Контакты</a></li>
+                <li><a href="form-add-cat.php">Тип сайтов</a></li>
+                <li><a href="form-add-status.php">Статусы разработки</a></li>
+                <li><a href="form_create_status_call.php">Статусы Звонков</a></li>
+                <li><a href="form_create_status_bid.php">Статусы Заявки</a></li>
+                <li><a href="form-add-know.php">Наши особенности</a></li>
+                <li><a href="form-add-cms.php">Система разработки</a></li>
+                <li><a href="form-add-work-style.php">Виды работ</a></li>
+                <li><a href="forms-page.php">Локализация</a></li>
+            </ul>
+            </li>
+
+
+            <li class="menu-title">Маркетинг</li>
+            <li>
+                <a href="javascript: void(0);">Настройка коммерции <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level" aria-expanded="false">
+                    <li><a href="list-tarif.php">Список тарифов</a></li>
+                    <li><a href="create-tarif.php">Создать тариф</a></li>
+                    <li><a href="list-type.php">Типы сайтов</a></li>
+                    <li><a href="app-ecommerce-product.html">Product</a></li>
+
+
+
+                    <li><a href="app-ecommerce-product.html">Product</a></li>
+                    <li><a href="app-ecommerce-product-list.html">Product List</a></li>
+                    <li><a href="app-ecommerce-product-detail.html">Product Detail</a></li>
+                    <li><a href="app-ecommerce-cart.html">Cart</a></li>
+                    <li><a href="app-ecommerce-checkout.html">Checkout</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-title">Проектный менеджер</li>
+            <li>
+                <a href="javascript: void(0);"><i class="mdi mdi-developer-board"></i><span>Проекты</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level" aria-expanded="false">
+                    <li><a href="create_project.php">Создание проекта</a></li>
+                    <li><a href="form-add-demo.php">Дэмо</a></li>
+                    <li><a href="pm_view_all_project.php">Все проекты</a></li>
+                    <li><a href="create_tz.php">Сделать ТЗ</a></li>
+                </ul>
+            </li>
+
+
+
+            <li class="menu-title">менеджер</li>
+            <li><a href="site_bid.php">Заявки с сайта</a></li>
+            <li><a href="calc.php">Калькулятор</a></li>
+            <li>
+                <a href="javascript: void(0);"><i class="mdi mdi-phone"></i><span>Звонки</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level" aria-expanded="false">
+                    <li><a href="view_me_calling.php">Все мои звонки</a></li>
+                    <li><a href="create_calling.php">Расписать звонок</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript: void(0);"><i class="mdi mdi-email-open"></i><span>Почта</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level" aria-expanded="false">
+                    <li><a href="send_kp.php">Отправить коммерческое предложение</a></li>
+                </ul>
+            </li>
+
+            <li><a href="app-contact-list-clients.php"><span>Клиенты</span></a></li>
+            <li><a href="app-chat.php"><span>Чат</span></a></li>
+
+
+<!--
+            <li>
+                <a href="javascript: void(0);"><i class="mdi mdi-developer-board"></i><span>Портфолио</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level" aria-expanded="false">
+                    <li><a href="view_all_project.php">Проекты для портфолио</a></li>
+                    <li><a href="create_portfolio.php">Добавить проекты для портфолио</a></li>
+                </ul>
+            </li>
+
             <li>
                 <a href="javascript: void(0);"><i class="mdi mdi-monitor"></i><span>Dashboards</span><span class="badge badge-danger badge-pill float-right">9+</span></a>
                 <ul class="nav-second-level" aria-expanded="false">
@@ -199,6 +292,6 @@
                     <li><a href="email-templates-billing.html">Billing Email</a></li>
                 </ul>
             </li>
-
+-->
         </ul>
     </div>

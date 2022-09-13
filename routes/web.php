@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\pagecontroller;
+use \App\Http\Controllers\userauthcontroller;
+use \App\Http\Middleware\Authenticate;
+use App\Http\Middleware;
+use App\Http\Middleware\RoleMiddleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +22,14 @@ use  App\Http\Controllers\pagecontroller;
 
 Route::get('/', function () {
     return view('home');
+});
+
+Route::get('/adm', function () {
+    return view('pages.admin-dash');
+});
+
+Route::get('/kek', function () {
+    return view('pages.fadd');
 });
 
 
