@@ -12,7 +12,13 @@
                 <a href="create_clients.php"><i class="mdi mdi-human-greeting"></i><span>Создать клиента</span></a>
             </li>
 
+            {{
+                        Route::group(['middleware' => 'role:web-developer'], function()
+                        {
+                            return 'Добро пожаловать, Веб-разработчик';
 
+                        })
+                    }}
             <li class="menu-title">Панель администратора</li>
             <li>
                 <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Сотрудники</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
