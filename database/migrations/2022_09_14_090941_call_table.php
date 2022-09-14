@@ -23,7 +23,6 @@ class CallTable extends Migration
             $table->integer('status')->default('0');
             $table->string('status_call');
             $table->string('status_bid');
-            $table->string('status_call');
             $table->text('description');
             $table->integer('id_tarif')->default('0');
             $table->integer('price');
