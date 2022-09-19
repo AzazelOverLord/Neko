@@ -170,8 +170,19 @@
                                         <th></th>
                                     </tr>
                                     </thead>
+                                    @foreach($calls as $call)
+                                        <tr>
+                                            <td>{{ $call->id }}</td>
+                                            <td>{{ $call->name_company }}</td>
+                                            <td>{{ $call->need_maket }}</td>
+                                            <td>{{ $call->maket }}</td>
+                                            <td>{{ $call->status_bid }}</td>
+                                            <td>{{ $call->date_meet }}</td>
+                                            <td>{{ $call->need_maket }}</td>
+                                            <td>{{ $call->caller }}</td>
 
-
+                                        </tr>
+                                    @endforeach
                                     <tbody>
                                     </tbody>
                                 </table>
