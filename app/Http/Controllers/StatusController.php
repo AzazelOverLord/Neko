@@ -12,4 +12,17 @@ class StatusController extends Controller
         $status = status::all();
         return view('pages.status.stype', compact('status'));
     }
+
+
+    public function store()
+    {
+        $data = request()->validate([
+           'title'=>'string',
+            'name'=>'string',
+            'code_name'=>'string',
+            'categories'=>'string',
+            'color'=>'string'
+        ]);
+        status::create($data);
+    }
 }

@@ -42,4 +42,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function info_tasks()
+    {
+        return $this->hasMany( call::class, 'id_user_fk', 'id');
+    }
+
+    public function info_tasks1()
+    {
+        return $this->hasMany( call::class, 'id_project_manager_fk', 'id');
+    }
 }

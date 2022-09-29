@@ -17,8 +17,15 @@ class TaskWebTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('description');
-            $table->integer('id_project_manager');
-            $table->integer('id_user');
+
+            $table->unsignedBigInteger('id_project_manager')->nullable();
+            $table->index('id_project_manager', 'id_project_manager_ind');
+            $table->foreign('id_project_manager', 'id_project_manager_fk')->on('users')->references('id');
+
+            $table->unsignedBigInteger('id_user')->nullable();
+            $table->index('id_user', 'id_user_ind');
+            $table->foreign('id_user', 'id_user_fk')->on('users')->references('id');
+
             $table->float('all_price');
             $table->float('user_price');
             $table->timestamp('dead_line',0)->useCurrent();

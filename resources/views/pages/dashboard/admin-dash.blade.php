@@ -221,17 +221,25 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Компания</th>
-                                        <th>Наименование</th>
-                                        <th>Статус</th>
-                                        <th>Разработчик</th>
-                                        <th>Проектный менеджер</th>
-                                        <th>Вид работы</th>
-                                        <th>Срок</th>
+                                        <th>Заголовок</th>
+                                        <th>Project Manager</th>
+                                        <th>Исполнитель</th>
+                                        <th>Выполнено</th>
+                                        <th>deadline</th>
                                         <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($wtasks as $task)
+                                        <tr>
+                                            <td>{{ $task->id }}</td>
+                                            <td>{{ $task->title }}</td>
+                                            <td><a href="UserProfile.php?profile={{ $task->id_project_manager }}">{{ $task->PMProject->name }}</a></td>
+                                            <td><a href="UserProfile.php?profile={{ $task->id_user }}">{{ $task->UserProject->name }}</a></td>
+                                            <td>что-то</td>
+                                            <td>{{ $task->dead_line }}</td>
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

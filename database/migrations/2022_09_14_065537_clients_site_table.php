@@ -15,7 +15,9 @@ class ClientsSiteTable extends Migration
     {
         Schema::create('clients_site', function (Blueprint $table) {
             $table->id();
-            $table->string('id_company');
+            $table->unsignedBigInteger('id_company')->nullable();
+            $table->index('id_company', 'id_company_ind');
+            $table->foreign('id_company', 'id_company_fk')->on('clients')->references('id');
             $table->string('url');
             $table->integer('active');
         });

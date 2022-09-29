@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\pagecontroller;
 use \App\Http\Controllers\userauthcontroller;
+use \App\Http\Controllers\InfoOnDashboardAdmin;
 use \App\Http\Controllers\pages\StatusController;
 use \App\Http\Middleware\Authenticate;
 use App\Http\Middleware;
@@ -21,17 +22,24 @@ use App\Http\Middleware\RoleMiddleware;
 
 //Route::get('/', [pagecontroller::class, 'index']);
 
+
+
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/adm', 'UserInfoController@index');
+Route::get('/adm', 'InfoOnDashboardAdmin@index');
+
 
 Route::get('/ad', 'StatusController@index')->name('form.add');
 
 Route::get('/kek', function () {
     return view('pages.fadd');
 });
+
+Route::get('/status', 'StatusController@index')->name('form.view');
+
+Route::post('/status', 'StatusController@create')->name('form.add');
 
 
 Route::get('/login', function () {
@@ -48,4 +56,3 @@ Route::get('/reset', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
