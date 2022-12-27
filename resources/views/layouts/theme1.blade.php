@@ -13,11 +13,17 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{  url('/')  }}/assets/images/favicon.ico">
 
+    <link href="{{  url('/')  }}/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+    <link href="{{  url('/')  }}/assets/plugins/form-wizard/css/smart_wizard.css" rel="stylesheet" type="text/css" />
+    <link href="{{  url('/')  }}/assets/plugins/form-wizard/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+    <link href="{{  url('/')  }}/assets/plugins/form-wizard/css/smart_wizard_theme_circles.css" rel="stylesheet" type="text/css" />
+    <link href="{{  url('/')  }}/assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
     <!-- App css -->
     <link href="{{  url('/')  }}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="{{  url('/')  }}/assets/css/icons.css" rel="stylesheet" type="text/css" />
     <link href="{{  url('/')  }}/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
     <link href="{{  url('/')  }}/assets/css/style.css" rel="stylesheet" type="text/css" />
+
 
 </head>
 
@@ -182,6 +188,31 @@
 <script src="{{  url('/')  }}/assets/js/waves.min.js"></script>
 <script src="{{  url('/')  }}/assets/js/jquery.slimscroll.min.js"></script>
 
+<script src="{{  url('/')  }}/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/form-wizard/js/jquery.smartWizard.min.js"></script>
+<script src="{{  url('/')  }}/assets/pages/jquery.form-wizard.init.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/moment/moment.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/select2/select2.min.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/timepicker/tempusdominus-bootstrap-4.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/timepicker/bootstrap-material-datetimepicker.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/clockpicker/jquery-clockpicker.min.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/colorpicker/jquery-asColor.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/colorpicker/jquery-asGradient.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/colorpicker/jquery-asColorPicker.min.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/select2/select2.min.js"></script>
+
+<script src="{{  url('/')  }}/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+<script src="{{  url('/')  }}/assets/plugins/apexcharts/apexcharts.min.js"></script>
+<script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script>
+<script src="https://apexcharts.com/samples/assets/series1000.js"></script>
+<script src="https://apexcharts.com/samples/assets/ohlc.js"></script>
+<script src="{{  url('/')  }}/assets/pages/jquery.dashboard.init.js"></script>
+<script src="{{  url('/')  }}/assets/pages/jquery.forms-advanced.js"></script>
 <!-- App js -->
 <script src="{{  url('/')  }}/assets/js/app.js"></script>
 

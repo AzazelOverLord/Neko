@@ -36,7 +36,7 @@
             <li>
             <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Настройки сайта</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
             <ul class="nav-second-level" aria-expanded="false">
-                <li><a href="">Контакты</a></li>
+                <li><a href="{{url('/Contact')}}">Контакты</a></li>
                 <li><a href="form-add-cat.php">Тип сайтов</a></li>
                 <li><a href="form-add-status.php">Статусы разработки</a></li>
                 <li><a href="form_create_status_call.php">Статусы Звонков</a></li>
@@ -88,7 +88,7 @@
                 <a href="javascript: void(0);"><i class="mdi mdi-phone"></i><span>Звонки</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                 <ul class="nav-second-level" aria-expanded="false">
                     <li><a href="view_me_calling.php">Все мои звонки</a></li>
-                    <li><a href="create_calling.php">Расписать звонок</a></li>
+                    <li><a href="{{url('/create_call')}}">Расписать звонок</a></li>
                 </ul>
             </li>
             <li>
